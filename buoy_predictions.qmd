@@ -1,0 +1,17 @@
+---
+title: "Buoy predictions"
+format: html
+editor: visual
+---
+
+loading in libraries
+
+```{r}
+library(tidyverse)
+```
+
+reading in data
+
+```{r}
+data_2016 <- read_tsv("https://www.ndbc.noaa.gov/view_text_file.php?filename=52201h2016.txt.gz&dir=data/historical/stdmet/", delimeter= '\s+')
+```
